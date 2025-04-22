@@ -13,12 +13,12 @@ public @Data class Contact {
     private long contactId;
     private String firstName;
     private String lastName;
-    private int phoneNumber;
+    private String phoneNumber;
     private String email;
     private String city;
     private String state;
     private String address;
-    private int pinCode;
+    private String pinCode;
 
     public Contact() {}
 
