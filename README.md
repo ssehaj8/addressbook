@@ -1,7 +1,7 @@
 ﻿# addressbook
  The Address Book App is a RESTful backend service built using Spring Boot that allows users to store, update, delete, and retrieve contact information. It's a simple yet powerful backend for managing an address book digitally.
  
-# Key Features
+## Key Features
  Add new contacts
 
  Update existing contacts
@@ -14,7 +14,7 @@
 
  RESTful APIs with standard status responses
 
- #Tech Stack
+ ## Tech Stack
  | Technology    | Purpose                         |
 | ------------- | ------------------------------- |
 | Java 21       | Programming Language            |
@@ -25,34 +25,41 @@
 | Maven         | Build tool                      |
 | Swagger       | API documentation (optional)    |
 
-#API Workflow (Step-by-Step)
+## API Workflow (Step-by-Step)
 User (Frontend/API Client)
-    ↓
+
 [1] Sends request via HTTP (e.g., Add contact)
 
 Spring Boot Controller
-    ↓
+
 [2] Maps request to endpoint (e.g., POST /addressbook)
-    └── Validates DTO fields
+
+   └── Validates DTO fields
 
 Service Layer
-    ↓
+
+    
 [3] Applies business logic
-    └── Passes data to Repository
+
+   └── Passes data to Repository
 
 Repository Layer (JPA)
-    ↓
+
+    
 [4] Persists/retrieves data using H2 or MySQL
 
 Database
-    ↓
+
+    
 [5] Returns data or confirmation
 
+
 Service → Controller → Frontend
-    ↓
+
+    
 [6] JSON response is sent back
 
-#Sample API Endpoints
+## Sample API Endpoints
 | Method | Endpoint                   | Description         |
 | ------ | -------------------------- | ------------------- |
 | POST   | `/addressbook/add`         | Add new contact     |
